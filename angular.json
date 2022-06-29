@@ -3,5 +3,36 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "ngx-i24-circular-progress": {
+      "projectType": "library",
+      "root": "projects/ngx-i24-circular-progress",
+      "sourceRoot": "projects/ngx-i24-circular-progress/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-i24-circular-progress/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-i24-circular-progress/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-i24-circular-progress/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-i24-circular-progress/src/test.ts",
+            "tsConfig": "projects/ngx-i24-circular-progress/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-i24-circular-progress/karma.conf.js"
+          }
+        }
+      }
+    }
   }
 }
