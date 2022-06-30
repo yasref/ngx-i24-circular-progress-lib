@@ -1,4 +1,69 @@
-# NgxI24CircularProgressLib
+# NgxI24CircularProgress
+
+ Lightweight plugin to render simple, animated and retina optimized pie charts
+ 
+## Features
+[![](https://raw.githubusercontent.com/yasref/ngx-i24-circular-progress-lib/master/demo/images/ngx-i24-circular-progress-lib.png)](https://stackblitz.com/edit/ngx-i24-circular-progress-demo)
+
+* highly customizable
+* very easy to implement
+## Get started
+#### Installation
+```
+$ npm i ngx-i24-circular-progress@latest
+```
+#### Example
+##### TS
+###### Module
+```typescript 
+import { NgxI24CircularProgressModule } from 'ngx-i24-circular-progress';
+@NgModule({
+  declarations: [ AppComponent ],
+  imports: [BrowserModule, NgxI24CircularProgressModule  ],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
+ ###### Component
+ ```typescript 
+import { Component } from '@angular/core';
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
+})
+export class AppComponent {
+  option = {
+    primaryColor: '#0495fc',
+    secondaryColor: '#191919',
+    percentColor: '#fff',
+    textColor: '#ffffffbf',
+    percent: 75,
+    text: 'html',
+    circleRadius: 70
+  };
+```
+##### HTML
+```html 
+<ngx-i24-circular-progress [option]="option"></ngx-i24-circular-progress>
+``` 
+
+## Options
+
+| Property (Type) | Default | Description|
+| - | - | - |
+| primaryColor | #0495fc | The color of the active bar |
+| secondaryColor | #191919 | The color of the inactive bar |
+| percentColor | #000 | The color of the percent |
+| textColor | #000000bf | The color of the text |
+| percent | 50 | The value must be between `0 - 100` |
+| text | 'css' | - |
+| circleRadius | 70 | The radius of the circle |
+
+## Copyright
+Copyright (c) 2022 Yaseen Alrefaee, contributors. Released under the MIT
+
+<!-- # NgxI24CircularProgressLib
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
 
@@ -24,4 +89,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page. -->
