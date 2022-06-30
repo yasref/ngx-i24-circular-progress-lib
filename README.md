@@ -1,6 +1,6 @@
 # NgxI24CircularProgress
 
- Lightweight plugin to render simple, animated and retina optimized pie charts
+ A lightweight plugin to render a simple, animated circular progress bar.
  
 ## Features
 [![](https://raw.githubusercontent.com/yasref/ngx-i24-circular-progress-lib/master/demo/images/ngx-i24-circular-progress-lib.png)](https://stackblitz.com/edit/ngx-i24-circular-progress-demo)
