@@ -7,6 +7,7 @@
 
 * highly customizable
 * very easy to implement
+* [DEMO](https://stackblitz.com/edit/ngx-i24-circular-progress-demo)
 ## Get started
 #### Installation
 ```
