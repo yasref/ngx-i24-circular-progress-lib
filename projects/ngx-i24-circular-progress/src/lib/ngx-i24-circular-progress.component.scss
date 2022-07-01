@@ -21,7 +21,7 @@
    width: 100%;
    height: 100%;
    fill: transparent;
-   stroke-width: 2;
+   stroke-width: var(--strokeWidth);
    stroke: var(--secondaryColor);
    transform: translate(5px, 5px);
  }
@@ -67,11 +67,11 @@
  .dot::before {
    content: '';
    position: absolute;
-   top: -5px;
+   top: var(--dotTop);
    left: 50%;
    transform: translateX(-50%);
-   width: 10px;
-   height: 10px;
+   width: var(--dotWidth);
+   height:var(--dotWidth);
    border-radius: 50%;
    background: var(--primaryColor);
    box-shadow: 0 0 10px var(--primaryColor), 0 0 30px var(--primaryColor);

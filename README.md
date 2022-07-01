@@ -55,6 +55,8 @@ export class AppComponent {
 | - | - | - |
 | primaryColor | #0495fc | The color of the active bar |
 | secondaryColor | #191919 | The color of the inactive bar |
+| strokeWidth | 2 | The stroke width of the circle |
+| dotWidth | 5 | The width and the height of the dot |
 | numberColor | #000 | The color of the number |
 | percentColor | #000 | The color of the percent sign |
 | textColor | #000000bf | The color of the text |
