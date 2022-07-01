@@ -9,21 +9,35 @@ export class NgxI24CircularProgressComponent implements OnChanges {
   @Input() option: I24CircularProgressOptions = {
     primaryColor: '#0495fc',
     secondaryColor: '#191919',
+
+    numberColor: '#000',
     percentColor: '#000',
     textColor: '#000000bf',
+
     percent: 50,
     text: 'css',
-    circleRadius: 70
+    circleRadius: 70,
+
+    numberFontSize: '2.5em',
+    percentFontSize: '0.5em',
+    textFontSize: '0.75em',
+
   };
   size = '150px';
   steps = 440;
   ngOnChanges() {
     this.option.primaryColor = this.option.primaryColor ? this.option.primaryColor : '#0495fc';
     this.option.secondaryColor = this.option.secondaryColor ? this.option.secondaryColor : '#191919';
+
+    this.option.numberColor = this.option.numberColor ? this.option.numberColor : '#000';
     this.option.percentColor = this.option.percentColor ? this.option.percentColor : '#000';
     this.option.textColor = this.option.textColor ? this.option.textColor : '#000000bf';
 
     this.option.circleRadius = this.option.circleRadius ? this.option.circleRadius : 70;
+
+    this.option.numberFontSize = this.option.numberFontSize ? this.option.numberFontSize : '2.5em';
+    this.option.percentFontSize = this.option.percentFontSize ? this.option.percentFontSize : '0.5em';
+    this.option.textFontSize = this.option.textFontSize ? this.option.textFontSize : '0.75em';
 
     this.size = ((this.option.circleRadius * 2) + 10) + 'px';
     this.steps = Math.round(6.2857 * this.option.circleRadius);
@@ -36,11 +50,18 @@ export class NgxI24CircularProgressComponent implements OnChanges {
   // }
 }
 export interface I24CircularProgressOptions {
-  primaryColor?: string
-  secondaryColor?: string
-  percentColor?: string
-  textColor?: string
-  percent: number
-  text?: string
-  circleRadius?: number
+  primaryColor?: string;
+  secondaryColor?: string;
+
+  numberColor?: string;
+  percentColor?: string;
+  textColor?: string;
+
+  percent: number;
+  text?: string;
+  circleRadius?: number;
+
+  numberFontSize?: string;
+  percentFontSize?: string;
+  textFontSize?: string;
 }

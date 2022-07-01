@@ -7,6 +7,7 @@
 
 * highly customizable
 * very easy to implement
+* [DEMO](https://stackblitz.com/edit/ngx-i24-circular-progress-demo)
 ## Get started
 #### Installation
 ```
@@ -54,8 +55,12 @@ export class AppComponent {
 | - | - | - |
 | primaryColor | #0495fc | The color of the active bar |
 | secondaryColor | #191919 | The color of the inactive bar |
-| percentColor | #000 | The color of the percent |
+| numberColor | #000 | The color of the number |
+| percentColor | #000 | The color of the percent sign |
 | textColor | #000000bf | The color of the text |
+| numberFontSize |  '2.5em' | The font size of the number |
+| percentFontSize |  '0.5em' | The font size of the percent sign |
+| textFontSize |  '0.75em' | The font size of the text |
 | percent | 50 | The value must be between `0 - 100` |
 | text | 'css' | - |
 | circleRadius | 70 | The radius of the circle |

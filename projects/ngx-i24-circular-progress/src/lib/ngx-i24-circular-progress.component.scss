@@ -94,23 +94,22 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   color: var(--percentColor);
+   color: var(--numberColor);
    font-weight: 700;
-   font-size: 2.5em;
+   font-size: var(--numberFontSize);
  }
 
  .number h2 span {
    font-weight: 300;
    color: var(--percentColor);
-   font-size: 0.5em;
+   font-size: var(--percentFontSize);
  }
 
  .number p {
    font-weight: 300;
-   font-size: 0.75em;
    letter-spacing: 2px;
    margin-top: 5px;
    text-transform: uppercase;
-   color: var(--textColor)
+   color: var(--textColor);
+   font-size: var(--textFontSize);
  }
- 

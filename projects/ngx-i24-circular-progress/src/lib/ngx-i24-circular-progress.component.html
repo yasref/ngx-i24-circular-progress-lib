@@ -2,11 +2,19 @@
      [ngStyle]="{
       '--primaryColor':option.primaryColor,
       '--secondaryColor':option.secondaryColor,
+
+      '--numberColor':option.numberColor,
       '--percentColor':option.percentColor,
       '--textColor':option.textColor,
+      
       '--num':option.percent,
-      '--steps':440,
-      '--size':'150px'}">
+      '--steps':steps,
+      '--size':size,
+
+      '--numberFontSize':option.numberFontSize,
+      '--percentFontSize':option.percentFontSize,
+      '--textFontSize':option.textFontSize
+    }">
   <div class="dot"></div>
   <svg>
     <circle cx="70"
