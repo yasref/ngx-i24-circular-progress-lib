@@ -43,6 +43,7 @@ export class AppComponent {
     text: 'html',
     circleRadius: 70
   };
+}
 ```
 ##### HTML
 ```html 
