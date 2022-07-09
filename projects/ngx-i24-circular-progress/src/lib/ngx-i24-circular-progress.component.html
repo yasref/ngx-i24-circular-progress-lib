@@ -1,24 +1,22 @@
 <div class="percent"
-     [ngStyle]="{
-      '--primaryColor':option.primaryColor,
-      '--secondaryColor':option.secondaryColor,
+     [style.--primaryColor]="option.primaryColor"
+     [style.--secondaryColor]="option.secondaryColor"
+     
+     [style.--strokeWidth]="strokeWidth"
+     [style.--dotWidth]="dotWidth"
+     [style.--dotTop]="dotTop"
 
-      '--strokeWidth':strokeWidth,
-      '--dotWidth':dotWidth,
-      '--dotTop':dotTop,
+     [style.--numberColor]="option.numberColor"
+     [style.--percentColor]="option.percentColor"
+     [style.--textColor]="option.textColor"
 
-      '--numberColor':option.numberColor,
-      '--percentColor':option.percentColor,
-      '--textColor':option.textColor,
+     [style.--num]="option.percent"
+     [style.--steps]="steps"
+     [style.--size]="size"
 
-      '--num':option.percent,
-      '--steps':steps,
-      '--size':size,
-
-      '--numberFontSize':option.numberFontSize,
-      '--percentFontSize':option.percentFontSize,
-      '--textFontSize':option.textFontSize
-    }">
+     [style.--numberFontSize]="option.numberFontSize"
+     [style.--percentFontSize]="option.percentFontSize"
+     [style.--textFontSize]="option.textFontSize">
   <div class="dot"></div>
   <svg>
     <circle [attr.cx]="option.circleRadius"
