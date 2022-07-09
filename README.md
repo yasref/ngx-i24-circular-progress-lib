@@ -68,6 +68,16 @@ export class AppComponent {
 | text | 'css' | - |
 | circleRadius | 70 | The radius of the circle |
 
+## Other Projects
+| Name | Link | Description|
+| - | - | - |
+| ngx-weekday-picker        | [Link](https://www.npmjs.com/package/ngx-weekday-picker)        | Lightweight plugin to a pick weekday.                                         |
+| ngx-i24-color-picker      | [Link](https://www.npmjs.com/package/ngx-i24-color-picker)      | A lightweight plugin to pick a color.                                         |
+
+## Donation
+
+- [![](https://raw.githubusercontent.com/yasref/ngx-i24-color-picker-lib/master/projects/demo/images/coffee.png)](https://www.buymeacoffee.com/yaseenref)
+
 ## Copyright
 Copyright (c) 2022 Yaseen Alrefaee, contributors. Released under the MIT
 
