@@ -3,11 +3,15 @@
  A lightweight plugin to render a simple, animated circular progress bar.
  
 ## Features
-[![](https://raw.githubusercontent.com/yasref/ngx-i24-circular-progress-lib/master/demo/images/ngx-i24-circular-progress-lib.png)](https://stackblitz.com/edit/ngx-i24-circular-progress-demo)
 
 * highly customizable
 * very easy to implement
-* [DEMO](https://stackblitz.com/edit/ngx-i24-circular-progress-demo)
+
+## Demo
+
+[![](https://raw.githubusercontent.com/yasref/ngx-i24-circular-progress-lib/master/demo/images/ngx-i24-circular-progress-lib.png)](https://stackblitz.com/edit/ngx-i24-circular-progress-demo)
+* [Link](https://stackblitz.com/edit/ngx-i24-circular-progress-demo)
+
 ## Get started
 #### Installation
 ```
@@ -76,7 +80,7 @@ export class AppComponent {
 
 ## Donation
 
-- [![](https://raw.githubusercontent.com/yasref/ngx-i24-color-picker-lib/master/projects/demo/images/coffee.png)](https://www.buymeacoffee.com/yaseenref)
+[![](https://raw.githubusercontent.com/yasref/ngx-i24-color-picker-lib/master/projects/demo/images/coffee.png)](https://www.buymeacoffee.com/yaseenref)
 
 ## Copyright
 Copyright (c) 2022 Yaseen Alrefaee, contributors. Released under the MIT

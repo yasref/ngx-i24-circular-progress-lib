@@ -1,6 +1,6 @@
 {
   "name": "ngx-i24-circular-progress",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A lightweight plugin to render a simple, animated circular progress bar.",
   "author": {
     "name": "YASEEN ALREFAEE",
