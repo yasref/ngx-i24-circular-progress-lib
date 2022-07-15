@@ -60,8 +60,6 @@ export class NgxI24CircularProgressComponent implements OnChanges {
     this.strokeWidth = this.option.strokeWidth + 'px';
     this.dotWidth = this.option.dotWidth + 'px';
     this.dotTop = '-' + Math.round(this.option.dotWidth / 2) + 'px';
-    console.log(this.option);
-
   }
   // get size() {
   //   return ((this.option.circleRadius * 2) + 10) + 'px';

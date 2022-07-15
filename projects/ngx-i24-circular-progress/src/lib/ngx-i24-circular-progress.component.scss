@@ -47,7 +47,11 @@
 
  .dot {
    position: absolute;
-   inset: 5px;
+  //  inset: 5px;
+   top:5px;
+   bottom:5px;
+   left:5px;
+   right:5px;
    z-index: 10;
    transform: rotate(calc(3.6deg * var(--num)));
    /* 360deg / 100 = 3.6 */
@@ -79,7 +83,12 @@
 
  .number {
    position: absolute;
-   inset: 0;
+  //  inset: 0;
+   top: 0px;
+   bottom: 0px;
+   left: 0px;
+   right: 0px;
+   
    display: flex;
    justify-content: center;
    align-items: center;
