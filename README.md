@@ -43,34 +43,36 @@ export class AppComponent {
     secondaryColor: '#191919',
     percentColor: '#fff',
     textColor: '#ffffffbf',
-    percent: 75,
     text: 'html',
     circleRadius: 70
   };
+  number = 75;
 }
 ```
 ##### HTML
 ```html 
-<ngx-i24-circular-progress [option]="option"></ngx-i24-circular-progress>
+<ngx-i24-circular-progress [option]="option" [number]="number"></ngx-i24-circular-progress>
 ``` 
 
 ## Options
 
 | Property (Type) | Default | Description|
 | - | - | - |
-| primaryColor | #0495fc | The color of the active bar |
-| secondaryColor | #191919 | The color of the inactive bar |
-| strokeWidth | 2 | The stroke width of the circle |
-| dotWidth | 5 | The width and the height of the dot |
-| numberColor | #000 | The color of the number |
-| percentColor | #000 | The color of the percent sign |
-| textColor | #000000bf | The color of the text |
-| numberFontSize |  '2.5em' | The font size of the number |
-| percentFontSize |  '0.5em' | The font size of the percent sign |
-| textFontSize |  '0.75em' | The font size of the text |
-| percent | 50 | The value must be between `0 - 100` |
-| text | 'css' | - |
-| circleRadius | 70 | The radius of the circle |
+| **number** | 0 | The percent value |
+| option -> primaryColor | #0495fc | The color of the active bar |
+| option -> secondaryColor | #191919 | The color of the inactive bar |
+| option -> strokeWidth | 2 | The stroke width of the circle |
+| option -> dotWidth | 5 | The width and the height of the dot |
+| option -> numberColor | #000 | The color of the number |
+| option -> percentColor | #000 | The color of the percent sign |
+| option -> textColor | #000000bf | The color of the text |
+| option -> numberFontSize |  '2.5em' | The font size of the number |
+| option -> percentFontSize |  '0.5em' | The font size of the percent sign |
+| option -> textFontSize |  '0.75em' | The font size of the text |
+| option -> percent | 50 | The value must be between `0 - 100` |
+| option -> text | 'css' | - |
+| option -> circleRadius | 70 | The radius of the circle |
+| option -> spaceBetweenNumberPercent | 3px | The space between number and percent sign |
 
 ## Other Projects
 | Name | Link | Description|
@@ -78,9 +80,9 @@ export class AppComponent {
 | ngx-weekday-picker        | [Link](https://www.npmjs.com/package/ngx-weekday-picker)        | Lightweight plugin to a pick weekday.                                         |
 | ngx-i24-color-picker      | [Link](https://www.npmjs.com/package/ngx-i24-color-picker)      | A lightweight plugin to pick a color.                                         |
 
-## Donation
+## Support
 
-[![](https://raw.githubusercontent.com/yasref/ngx-i24-color-picker-lib/master/projects/demo/images/coffee.png)](https://www.buymeacoffee.com/yaseenref)
+[![](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.buymeacoffee.com/yaseenref)
 
 ## Copyright
 Copyright (c) 2022 Yaseen Alrefaee, contributors. Released under the MIT

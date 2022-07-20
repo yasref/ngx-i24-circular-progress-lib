@@ -17,7 +17,6 @@ export class NgxI24CircularProgressComponent implements OnChanges {
     percentColor: '#000',
     textColor: '#000000bf',
 
-    percent: 50,
     text: 'css',
     circleRadius: 70,
 
@@ -26,13 +25,15 @@ export class NgxI24CircularProgressComponent implements OnChanges {
     textFontSize: '0.75em',
 
   };
+  @Input() number: number = 0;
+
   size = '150px';
   steps = 440;
 
   strokeWidth = '2px';
   dotWidth = '10px';
   dotTop = '-5px';
-
+  strokeDashoffset = 0;
   ngOnChanges() {
     this.init();
   }
@@ -53,6 +54,7 @@ export class NgxI24CircularProgressComponent implements OnChanges {
     this.option.numberFontSize = this.option.numberFontSize ? this.option.numberFontSize : '2.5em';
     this.option.percentFontSize = this.option.percentFontSize ? this.option.percentFontSize : '0.5em';
     this.option.textFontSize = this.option.textFontSize ? this.option.textFontSize : '0.75em';
+    this.option.spaceBetweenNumberPercent = this.option.spaceBetweenNumberPercent ? this.option.spaceBetweenNumberPercent : '3px';
 
     this.size = ((this.option.circleRadius * 2) + 10) + 'px';
     this.steps = Math.round(6.2857 * this.option.circleRadius);
@@ -60,6 +62,8 @@ export class NgxI24CircularProgressComponent implements OnChanges {
     this.strokeWidth = this.option.strokeWidth + 'px';
     this.dotWidth = this.option.dotWidth + 'px';
     this.dotTop = '-' + Math.round(this.option.dotWidth / 2) + 'px';
+
+    this.strokeDashoffset = this.steps - ((this.steps * this.number) / 100);
   }
   // get size() {
   //   return ((this.option.circleRadius * 2) + 10) + 'px';
@@ -79,7 +83,8 @@ export interface I24CircularProgressOptions {
   percentColor?: string;
   textColor?: string;
 
-  percent: number;
+  spaceBetweenNumberPercent?: string;
+
   text?: string;
   circleRadius?: number;
 

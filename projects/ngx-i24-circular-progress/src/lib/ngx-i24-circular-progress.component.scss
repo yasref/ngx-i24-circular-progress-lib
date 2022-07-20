@@ -29,7 +29,7 @@
  .percent svg circle:nth-child(2) {
    stroke: var(--primaryColor);
    stroke-dasharray: var(--steps);
-   stroke-dashoffset: calc(var(--steps) - (var(--steps) * var(--num))/100);
+   stroke-dashoffset: var(--strokeDashoffset);
    opacity: 0;
    animation: fadeIn 1s linear forwards;
    animation-delay: 1.0s;

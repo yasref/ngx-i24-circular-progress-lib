@@ -1,22 +1,19 @@
 <div class="percent"
      [style.--primaryColor]="option.primaryColor"
      [style.--secondaryColor]="option.secondaryColor"
-     
      [style.--strokeWidth]="strokeWidth"
      [style.--dotWidth]="dotWidth"
      [style.--dotTop]="dotTop"
-
      [style.--numberColor]="option.numberColor"
      [style.--percentColor]="option.percentColor"
      [style.--textColor]="option.textColor"
-
-     [style.--num]="option.percent"
+     [style.--num]="number"
      [style.--steps]="steps"
      [style.--size]="size"
-
      [style.--numberFontSize]="option.numberFontSize"
      [style.--percentFontSize]="option.percentFontSize"
-     [style.--textFontSize]="option.textFontSize">
+     [style.--textFontSize]="option.textFontSize"
+     [style.--strokeDashoffset]="strokeDashoffset">
   <div class="dot"></div>
   <svg>
     <circle [attr.cx]="option.circleRadius"
@@ -27,7 +24,7 @@
             [attr.r]="option.circleRadius"></circle>
   </svg>
   <div class="number">
-    <h2>{{option.percent}}
+    <h2>{{number}}
       <span>%</span>
     </h2>
     <p *ngIf="option.text">{{option.text}}</p>
