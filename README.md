@@ -77,8 +77,11 @@ export class AppComponent {
 ## Other Projects
 | Name | Link | Description|
 | - | - | - |
+| ngx-i24-circular-progress | [Link](https://www.npmjs.com/package/ngx-i24-circular-progress) | A lightweight plugin to render a simple, animated circular progress bar.      |
+| ngx-i24-progress-bar      | [Link](https://www.npmjs.com/package/ngx-i24-progress-bar)      | A lightweight plugin to render a simple, animated progress bar.               |
 | ngx-weekday-picker        | [Link](https://www.npmjs.com/package/ngx-weekday-picker)        | Lightweight plugin to a pick weekday.                                         |
 | ngx-i24-color-picker      | [Link](https://www.npmjs.com/package/ngx-i24-color-picker)      | A lightweight plugin to pick a color.                                         |
+| ngx-i24-checkbox          | [Link](https://www.npmjs.com/package/ngx-i24-checkbox)      | A lightweight plugin to display a modern checkbox.                                |
 
 ## Support
 
