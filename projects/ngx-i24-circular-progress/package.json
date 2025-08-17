@@ -1,6 +1,6 @@
 {
   "name": "ngx-i24-circular-progress",
-  "version": "19.0.0",
+  "version": "20.0.0",
   "description": "A lightweight plugin to render a simple, animated circular progress bar.",
   "author": {
     "name": "YASEEN ALREFAEE",
@@ -12,8 +12,8 @@
     "url": "https://github.com/yasref/ngx-i24-circular-progress-lib"
   },
   "peerDependencies": {
-    "@angular/common": "^19.2.14",
-    "@angular/core": "^19.2.14"
+    "@angular/common": "^20.1.7",
+    "@angular/core": "^20.1.7"
   },
   "dependencies": {
     "tslib": "^2.3.0"
