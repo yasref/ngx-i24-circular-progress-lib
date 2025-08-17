@@ -1,9 +1,10 @@
 import { Component, Input, OnChanges } from '@angular/core';
 
 @Component({
-  selector: 'ngx-i24-circular-progress',
-  templateUrl: `./ngx-i24-circular-progress.component.html`,
-  styleUrls: ['./ngx-i24-circular-progress.component.scss']
+    selector: 'ngx-i24-circular-progress',
+    templateUrl: `./ngx-i24-circular-progress.component.html`,
+    styleUrls: ['./ngx-i24-circular-progress.component.scss'],
+    standalone: false
 })
 export class NgxI24CircularProgressComponent implements OnChanges {
   @Input() option: I24CircularProgressOptions = {
