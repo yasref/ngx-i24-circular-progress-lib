@@ -19,21 +19,15 @@ $ npm i ngx-i24-circular-progress@latest
 ```
 #### Example
 ##### TS
-###### Module
+###### Component
 ```typescript 
-import { NgxI24CircularProgressModule } from 'ngx-i24-circular-progress';
-@NgModule({
-  declarations: [ AppComponent ],
-  imports: [BrowserModule, NgxI24CircularProgressModule  ],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
-```
- ###### Component
- ```typescript 
 import { Component } from '@angular/core';
+import { NgxI24CircularProgressComponent } from 'ngx-i24-circular-progress';
+
 @Component({
   selector: 'app-root',
+  standalone: true,
+  imports: [NgxI24CircularProgressComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })

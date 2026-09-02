@@ -8,7 +8,7 @@ describe('NgxI24CircularProgressComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NgxI24CircularProgressComponent ]
+      imports: [ NgxI24CircularProgressComponent ]
     })
     .compileComponents();
 

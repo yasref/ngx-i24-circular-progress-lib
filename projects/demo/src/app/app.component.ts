@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { NgxI24CircularProgressComponent } from 'projects/ngx-i24-circular-progress/src/public-api';
 
 @Component({
     selector: 'app-root',
+    standalone: true,
+    imports: [NgxI24CircularProgressComponent],
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss'],
-    standalone: false
+    styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   darkHtmlOption = {
