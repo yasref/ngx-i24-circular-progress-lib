@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { NgxI24CircularProgressComponent } from 'ngx-i24-circular-progress';
+import { NgxI24CircularProgress } from 'ngx-i24-circular-progress';
 
 @Component({
     selector: 'app-root',
     standalone: true,
-    imports: [NgxI24CircularProgressComponent],
+    imports: [NgxI24CircularProgress],
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss']
 })
