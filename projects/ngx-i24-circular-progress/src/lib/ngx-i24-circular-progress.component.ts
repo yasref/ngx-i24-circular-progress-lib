@@ -6,7 +6,7 @@ import { Component, Input, OnChanges } from '@angular/core';
     styleUrls: ['./ngx-i24-circular-progress.component.scss'],
     standalone: true
 })
-export class NgxI24CircularProgressComponent implements OnChanges {
+export class NgxI24CircularProgress implements OnChanges {
   @Input() option: I24CircularProgressOptions = {
     primaryColor: '#0495fc',
     secondaryColor: '#191919',

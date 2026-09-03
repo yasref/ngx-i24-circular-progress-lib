@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NgxI24CircularProgressComponent } from 'projects/ngx-i24-circular-progress/src/public-api';
+import { NgxI24CircularProgressComponent } from 'ngx-i24-circular-progress';
 
 @Component({
     selector: 'app-root',
